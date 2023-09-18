@@ -2,7 +2,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="w-[912px] h-[1250px] border-2 border-sky-600 m-auto">
+    <div className="w-[912px] h-[1270px] border-2 border-sky-600 m-auto">
       {/* Inner whole div */}
       <div className="ml-8 mt-5 mr-5">
         {/* 1st row whole div */}
@@ -195,6 +195,8 @@ function App() {
 
         <div className="mt-2">
           <div className="text-black font-normal text-[22px]">Achievements</div>
+          <hr className="w-full h-[2px] bg-sky-500 mt-1" />
+
           <p className="text-[15px]">
             Digital Marketing Certification by Google
           </p>
