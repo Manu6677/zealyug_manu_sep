@@ -2,25 +2,24 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="w-[912px] h-[1270px] border-2 border-sky-600 m-auto">
+    <div className="w-[912px] h-[1200px] border-2 border-sky-600 m-auto">
       {/* Inner whole div */}
       <div className="ml-8 mt-5 mr-5">
         {/* 1st row whole div */}
-        <div className="flex items-center text-black justify-between">
-          <div>
-            <div className="w-[176px] h-[30px] text-[25px] font-normal">
-              Name
-            </div>
-            <div className="font-normal text-[15px] mt-2">Expertise</div>
-            <div className="font-normal text-[15px] my-1">Location</div>
+        <div className="flex-col text-black">
+          <div className="font-normal flex items-center justify-center text-[25px]">
+            Name
           </div>
 
-          <div className="text-black text-[15px]">
-            <div className="font-normal">name@gmail.com</div>
-            <div className="font-normal">+91 432 2222 322</div>
-            <div className="font-normal w-[100px] h-[12px]">
-              Link of your profile
-            </div>
+          <div className="flex items-center justify-center text-[15px] space-x-9">
+            <div>Expertise</div>
+            <div>Location</div>
+          </div>
+
+          <div className="flex items-center justify-center text-[15px] space-x-8">
+            <div>name@gmail.com</div>
+            <div>+91 4322222322</div>
+            <div>Link of your profile</div>
           </div>
         </div>
 
@@ -41,124 +40,143 @@ function App() {
 
         {/* 3rd column */}
         <div className="mt-2">
-          <div className="text-black font-normal text-[22px]">
-            Professional Experience
-          </div>
+          <div className="text-black font-normal text-[22px]">Experience</div>
           <hr className="w-full h-[2px] bg-sky-500 mt-1" />
 
-          <div className="flex items-center justify-between font-normal text-[17px]">
-            <div className="space-y-2  text-black mt-2">
-              <div className="">ABC Company</div>
-              <div className="">UX Design Intern</div>
+          <div className="flex justify-between mt-1">
+            <div className="w-1/4 text-[15px]">Jan 2023 - Present</div>
+
+            <div className="w-96 -ml-64">
+              <div className="font-medium">ABC Company</div>
+              <div className="font-medium">UX Design Intern</div>
             </div>
 
-            <div className="space-y-2 text-gray-600 mt-2 mr-6">
-              <div className="flex justify-end">Delhi, India</div>
-              <div className="">Jan 2023 - Present</div>
-            </div>
+            <div className="h-1/2 w-1/6">Delhi, India</div>
           </div>
-          <div className="text-[8px] w-full font-normal text-gray-600 space-y-1">
-            <p className="mt-4 text-[15px]">
-              Conducted user research and analyzed data to identify design
-              opportunities and inform design decisions followed by bjddi hrb
-              rjrjr udud udbbd drrvrd
-            </p>
-            <ul className="space-y-1 text-[15px]">
-              <li>
-                Collaborated with cross-functional teams to create wireframes,
-                prototypes, and high-fidelity mockups{" "}
-              </li>
-              <li>Maintained High Standard work</li>
-            </ul>
-          </div>
-          {/* ---same below--- */}
-          <div className="mt-1">
-            <div className="flex items-center justify-between font-normal text-[17px]">
-              <div className="space-y-2  text-black mt-2">
-                <div className="">ABC Company</div>
-                <div className="">UX Design Intern</div>
-              </div>
+        </div>
+        <div className="text-[13px] text-gray-600 mt-2 ml-36">
+          <p>
+            Conducted user research and analyzed data to identify design
+            opportunities and inform design decisions followed by bjddi hrb
+            rjrjr udud udbbd drrvrd
+          </p>
 
-              <div className="space-y-2 text-gray-600 mt-2 mr-6">
-                <div className="flex justify-end">Delhi, India</div>
-                <div className="">Jan 2023 - Present</div>
-              </div>
+          <ul>
+            <li>
+              Collaborated with cross-functional teams to create wireframes,
+              prototypes, and high-fidelity mockups
+            </li>
+            <li>Maintained High Standard work</li>
+          </ul>
+        </div>
+
+        {/* same below 2nd try */}
+
+        <div>
+          <div className="flex justify-between mt-1">
+            <div className="w-1/4 text-[15px]">Jan 2023 - Present</div>
+
+            <div className="w-96 -ml-64">
+              <div className="font-medium">ABC Company</div>
+              <div className="font-medium">UX Design Intern</div>
             </div>
-            <div className="text-[8px] w-full font-normal text-gray-600 space-y-1">
-              <p className="mt-4 text-[15px]">
-                Conducted user research and analyzed data to identify design
-                opportunities and inform design decisions followed by bjddi hrb
-                rjrjr udud udbbd drrvrd
-              </p>
-              <ul className="space-y-1 text-[15px]">
-                <li>
-                  Collaborated with cross-functional teams to create wireframes,
-                  prototypes, and high-fidelity mockups{" "}
-                </li>
-                <li>Maintained High Standard work</li>
-              </ul>
-            </div>
+
+            <div className="h-1/2 w-1/6">Delhi, India</div>
           </div>
+        </div>
+
+        <div className="text-[13px] text-gray-600 mt-2 ml-36">
+          <p>
+            Conducted user research and analyzed data to identify design
+            opportunities and inform design decisions followed by bjddi hrb
+            rjrjr udud udbbd drrvrd
+          </p>
+
+          <ul>
+            <li>
+              Collaborated with cross-functional teams to create wireframes,
+              prototypes, and high-fidelity mockups
+            </li>
+            <li>Maintained High Standard work</li>
+          </ul>
         </div>
 
         {/* 4th column */}
         <div className="mt-2">
           <div className="text-black font-normal text-[22px]">Projects</div>
           <hr className="w-full h-[2px] bg-sky-500 mt-1" />
-          <div className="mt-1">
-            <div className="flex items-center justify-between font-normal text-[17px]">
-              <div className="space-y-2  text-black mt-2">
-                <div className="">XYZ Project</div>
-                <div className="">Organization Name</div>
-              </div>
 
-              <div className="space-y-2 text-gray-600 mt-2 mr-6">
-                <div className="flex justify-end">Freelance Designer</div>
-                <div className="">Jan 2022 - Dec 2022</div>
-              </div>
+          <div className="flex justify-between mt-1">
+            <div className="w-1/4 text-[15px]">Jan 2022 - Dec 2022</div>
+
+            <div className="w-96 -ml-64 space-y-2">
+              <div className="font-medium">XYZ Project</div>
+              <div className="text-blue-600">https://zealyug.com</div>
             </div>
-            <div className="text-[8px] w-full font-normal text-gray-600 space-y-1">
-              <ul className="space-y-1 text-[15px]">
-                <li>
-                  Designed wireframes, prototypes, and visual designs for mobile
-                  and web-based products hrbkjfrn drbjdrhrh duidr3uhbdr
-                  deiudr3bgd3riodrb dud3rhdrhr dwe
-                </li>
-                <li>
-                  Conducted usability testing and iterated on design solutions
-                  based on user feedback{" "}
-                </li>
-              </ul>
-            </div>
+
+            <div className="w-1/6 h-1/2">Remote</div>
           </div>
+        </div>
+
+        <div className="text-[13px] mt-2 ml-36">
+          <div className="text-[15px]">Organization Name</div>
+
+          <ul className="text-gray-600 w-full">
+            <li className="mt-1">
+              Designed wireframes, prototypes, and visual designs for mobile and
+              web-based products hrbkjfrn drbjdrhrh duidr3uhbdr
+              deiudr3bgd3riodrb dud3rhdrhr dwe
+            </li>
+            <li className="mt-1">
+              Conducted usability testing and iterated on design solutions based
+              on user feedback{" "}
+            </li>
+          </ul>
         </div>
 
         {/* 5th column */}
         <div className="mt-2">
           <div className="text-black font-normal text-[22px]">Education</div>
           <hr className="w-full h-[2px] bg-sky-500 mt-1" />
-          <div className="mt-1">
-            <div className="flex items-center justify-between font-normal text-[17px]">
-              <div className="space-y-2  text-black mt-2">
-                <div className="">School of Design</div>
-                <div className="">YX Design Bootcamp</div>
-              </div>
 
-              <div className="space-y-2 text-gray-600 mt-2 mr-6">
-                <div className="flex justify-end">Delhi, India</div>
-                <div className="">Jan 2023 - Feb 2023</div>
-              </div>
+          {/* <div className="flex justify-between  mt-1">
+            <div className="w-1/4 text-[15px]">Jan 2023 - Feb 2023</div>
+
+            <div className="border-2 border-red-600 w-96 -ml-60 space-y-2">
+              <div className="font-medium">School of Design</div>
+              <div>UX Design BootCamp</div>
             </div>
-            <div className="text-[8px] w-full font-normal text-gray-600 space-y-1">
-              <p className="font-normal text-[15px] mt-1">Specialization</p>
-              <ul className="space-y-1 text-[15px]">
-                <li>
-                  Intensive, full-time program that provided hands-on training
-                  in user-centered design, prototyping, and visual design
-                </li>
-              </ul>
+
+            <div className="w-1/3 h-1/2 border-2 flex items-center justify-end border-green-500 flex-col">
+              <div className="">Remote</div>
+              <div className="">Performance: 88%</div>
+            </div>
+          </div> */}
+
+          <div className="flex justify-between mt-1">
+            <div className="w-1/4 text-[15px]">Jan 2022 - Dec 2022</div>
+
+            <div className="w-96 -ml-64 space-y-2">
+              <div className="font-medium">School of Design</div>
+              <div>UX Design Bootcamp</div>
+            </div>
+
+            <div className="w-1/6  flex-col flex items-center h-1/2">
+              <div className="ml-10">Remote</div>
+              <div>Performance: 88%</div>
             </div>
           </div>
+        </div>
+
+        <div className="text-[13px] ml-36 mt-2">
+          <div className="text-[15px]">Specialization</div>
+
+          <ul className="text-gray-600">
+            <li className="mt-1 w-full">
+              Intensive, full-time program that provided hands-on training in
+              user-centered design, prototyping, and visual design
+            </li>
+          </ul>
         </div>
 
         {/* 6th column */}
